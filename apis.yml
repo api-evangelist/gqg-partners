@@ -1,23 +1,110 @@
 aid: gqg-partners
+
 name: GQG Partners
-description: 'GQG Partners is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: GQG Partners (Global Quality Growth) is an investment boutique that manages global, emerging market, and US equities
+  for institutions, financial intermediaries/advisors and individual investors worldwide, and is listed on the ASX with an
+  ASX Shareholder Centre at investors.gqg.com. Its website gqg.com publishes its investment approach, research insights (GQG
+  Research, CIO Perspectives, webcasts), press releases and careers. No public developer API, API documentation or developer
+  portal was found on gqg.com during this identity pass.
+
 url: https://raw.githubusercontent.com/api-evangelist/gqg-partners/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Investment Management
+- Asset Management
+- Equities
+- Emerging Markets
+- Financial Services
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://gqg.com/content/2023/08/favicon-700x700.png
+
 common:
+- type: Hosts
+  url: hosts/gqg-partners-hosts.yml
+- type: Vendors
+  url: vendors/gqg-partners-vendors.yml
+- type: DomainSecurity
+  url: security/gqg-partners-domain-security.yml
 - type: Website
   url: https://gqg.com/
+- type: About
+  url: https://gqg.com/about/
+- type: Blog
+  url: https://gqg.com/insights/
+- type: Newsroom
+  url: https://gqg.com/news/
+- type: Support
+  url: https://gqg.com/contact-us/
+- type: Careers
+  url: https://gqg.com/careers/
+- type: InvestorRelations
+  url: https://investors.gqg.com/
+- type: Login
+  url: https://gqg.com/log-in/
+- type: TermsOfService
+  url: https://gqg.com/terms-use/
+- type: PrivacyPolicy
+  url: https://gqg.com/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/gqgpartners/
+- type: Twitter
+  url: https://twitter.com/gqgpartners
+- type: YouTube
+  url: https://www.youtube.com/@gqgpartners
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: gqg.com homepage title "GQG Partners | Global Quality Growth | Investment Management" names the company; front door
+    open. Pointers taken from homepage links and preflight site_links; no developer/API surface found.
+  evidence:
+  - url: https://gqg.com/
+    status: 200
+  - url: https://investors.gqg.com/
+    status: 200
+  - url: https://gqg.com/about/
+    status: 200
+  - url: https://gqg.com/insights/
+    status: 200
+  - url: https://gqg.com/news/
+    status: 200
+  - url: https://gqg.com/contact-us/
+    status: 200
+  - url: https://gqg.com/careers/
+    status: 200
+  - url: https://gqg.com/terms-use/
+    status: 200
+  - url: https://gqg.com/privacy-policy/
+    status: 200
+  - url: https://gqg.com/log-in/
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

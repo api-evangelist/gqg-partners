@@ -1,0 +1,26 @@
+name: GQG Partners MCP Server
+type: MCPServer
+generated: '2026-10-21'
+method: none
+source:
+- https://gqg.com/.well-known/mcp.json
+- https://investors.gqg.com/.well-known/mcp.json
+description: >-
+  Checked for an official GQG Partners MCP server and found none. https://gqg.com/.well-known/mcp.json
+  and https://gqg.com/AGENTS.md returned HTTP 403 (an HTML error page) on 2026-10-21, and
+  https://investors.gqg.com/.well-known/mcp.json returned HTTP 302 to an HTML page. The pre-flight
+  contract discovery on gqg.com, investors.gqg.com and api.gqg.com found no MCP, OpenAPI, AsyncAPI or
+  GraphQL surface, and a web search for a GQG Partners MCP server or developer API returned nothing from
+  GQG Partners. There is no published OpenAPI to derive a candidate tool list from, so this file lists no tools.
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+tools: []
+probes:
+- url: https://gqg.com/.well-known/mcp.json
+  status: 403
+- url: https://gqg.com/AGENTS.md
+  status: 403
+- url: https://investors.gqg.com/.well-known/mcp.json
+  status: 302

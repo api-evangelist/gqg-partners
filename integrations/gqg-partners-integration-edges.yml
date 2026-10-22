@@ -1,0 +1,18 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/gqg-partners/integrations
+- https://n8n.io/integrations/gqg-partners/
+- https://composio.dev/toolkits/gqg-partners
+- https://monid.ai/tools/gqg-partners
+checked:
+- https://zapier.com/apps/gqg-partners/integrations
+- https://gqg.com/
+- https://composio.dev/toolkits/gqg-partners
+- https://monid.ai/tools/gqg-partners
+- https://n8n.io/integrations/gqg-partners/
+summary: No marketplace listing (Zapier app page 404), no integrations/partners page on gqg.com, and no API contract
+  in the repo. GQG Partners is an investment management firm with no public developer API.
+marketplace_apps: []
+edges: []
+templates: []

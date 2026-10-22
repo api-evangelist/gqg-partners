@@ -1,0 +1,121 @@
+generated: '2026-10-21'
+method: searched
+probe: true
+source: https://gqg.com/privacy-policy/
+notes: >-
+  GQG Partners is an SEC-registered investment adviser; it publishes no API. Its posture is read from the
+  US Privacy Policy (Last Updated: August 19, 2026), the GDPR Privacy Notice (Last Updated: December 19, 2023)
+  and the ADGM Privacy Notice. The GDPR, ADGM and Cookie pages answered 403 to a plain GET and 200 to
+  fetch-url.py's alternate user agent. The Cookie Policy and Terms of Use were not mined for signals.
+signals:
+  data_subject_request:
+    url: https://gqg.com/privacy-policy/
+    section: YOUR CALIFORNIA PRIVACY RIGHTS
+    channel: GQG CCPA Request Form or 1-833-904-9090
+    rights_named: [know (including in a portable format), deletion, correction, opt out of sharing or sale]
+    evidence:
+    - source: https://gqg.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Subject to certain limitations, you have the right to (1) request to know more about the categories
+        and specific pieces of personal information we collect, use, and disclose, including in a portable
+        format, (2) request deletion of your personal information, (3) request correction of inaccurate
+        personal information, and (4) opt out of any “sharing” or “sales” of your personal information that
+        may be occurring.
+    - source: https://gqg.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We will verify your request by asking you to provide certain identifying information, such as your
+        name, email address, phone number, or company. We will not discriminate against you if you exercise
+        your rights under the CCPA.
+    note: >-
+      CCPA rights to know, delete, correct and opt out, with a web form and phone channel and identity
+      verification. No response time is stated in these lines. The GDPR and ADGM notices list rights
+      separately, including a request to transfer data to another party.
+  global_privacy_control:
+    url: https://gqg.com/privacy-policy/
+    section: YOUR CALIFORNIA PRIVACY RIGHTS
+    evidence:
+    - source: https://gqg.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        You can also opt out by visiting our Services with a legally-recognized universal choice signal
+        enabled (such as the Global Privacy Control).
+    note: >-
+      GQG says it honours GPC as an opt-out of sharing or sale. It adds that processing of the signal may be
+      limited to the browser or device in use.
+  data_residency:
+    url: https://gqg.com/privacy-policy/
+    section: TRANSFER OF INFORMATION TO THE UNITED STATES AND OTHER COUNTRIES
+    evidence:
+    - source: https://gqg.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        GQG is headquartered in the United States, and we have operations and service providers in the United
+        States, United Kingdom, Australia, the United Arab Emirates and other countries. Therefore, we and our
+        service providers may transfer your personal information to, or store or access it in, jurisdictions
+        that may not provide levels of data protection that are equivalent to those of your home jurisdiction.
+    - source: https://gqg.com/gdpr-privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        As we are headquartered in the United States and have operations and service providers in the United
+        States and other countries, we and our service providers may process any data we collect about you in
+        the United States, Australia, and other jurisdictions outside of the EEA, Switzerland, and the UK.
+    note: >-
+      This is a cross-border transfer disclosure, not a residency commitment. Data may be processed in the US,
+      UK, Australia, UAE and elsewhere. For EEA/UK and ADGM data, GQG says it uses safeguards such as
+      standard contractual clauses where required.
+  data_retention:
+    url: https://gqg.com/gdpr-privacy-policy/
+    section: Data Retention
+    evidence:
+    - source: https://gqg.com/gdpr-privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Generally, we will keep information relevant to our dealings with you for at least seven (7) years
+        following the last date of activity.
+    - source: https://gqg.com/adgm-privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Generally, we will keep information relevant to our dealings with you for at least six (6) years
+        following the termination of our contract.
+    - source: https://gqg.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Note that we may retain certain information as required by law or for our legitimate business
+        purposes.
+    note: >-
+      The stated minimums differ by regime: at least 7 years after last activity (GDPR notice) and at least
+      6 years after the contract ends (ADGM notice). The US policy gives no period and reserves the right to
+      keep data after an account is deleted.
+  age_assurance:
+    url: https://gqg.com/privacy-policy/
+    section: YOUR CALIFORNIA PRIVACY RIGHTS
+    evidence:
+    - source: https://gqg.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We do not knowingly sell personal information about individuals under the age of 16.
+    note: >-
+      This is only a CCPA statement about not knowingly selling minors' data. No age-verification mechanism
+      is described.
+  ai_transparency:
+    url: https://gqg.com/adgm-privacy-policy/
+    evidence:
+    - source: https://gqg.com/adgm-privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Please note that the right not to be subject to a decision based solely on automated Processing, would
+        not apply, since automated processing is not conducted.
+    note: >-
+      GQG states that it does not make solely automated decisions under the ADGM regime. This is the only
+      statement close to AI transparency. Nothing about AI or models appears in these pages.

@@ -1,0 +1,13 @@
+generated: '2026-10-21'
+method: none
+packages: []
+checked:
+- url: https://registry.npmjs.org/gqg
+  status: 200
+  note: Unrelated package ("Schema-first GraphQL code generator", repo github.com/hanpama/gqg) -- not GQG Partners.
+- url: https://pypi.org/pypi/gqg/json
+  status: 404
+- url: https://api.github.com/orgs/gqg-partners
+  status: 200
+  note: Empty GitHub org (0 public repos, no name/blog) with no evidence it belongs to GQG Partners; nothing to record.
+note: GQG Partners is an investment manager with no public API, developer docs or SDKs found (pre-flight probed gqg.com, investors.gqg.com, api.gqg.com; no contract, docs host or llms.txt). No first-party client libraries exist to record.
