@@ -1,0 +1,14 @@
+{
+  "repo": "gqg-partners",
+  "feeds": [
+    {
+      "source": "https://gqg.com/insights/",
+      "feed_url": "https://gqg.com/feed/",
+      "title": "",
+      "saved": 2,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 2,
+  "fetched": "2026-10-24T12:29:31Z"
+}
